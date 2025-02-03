@@ -1,5 +1,6 @@
 //
-// Help! Evil alien creatures have hidden eggs all over the Earth
+// Help!
+// Evil alien creatures have hidden eggs all over the Earth
 // and they're starting to hatch!
 //
 // Before you jump into battle, you'll need to know three things:
@@ -78,7 +79,8 @@ pub fn main() void {
     };
 
     var aliens_alive = aliens.len;
-    const heat_ray = HeatRay{ .damage = 7 }; // We've been given a heat ray weapon.
+    const heat_ray = HeatRay{ .damage = 7 };
+    // We've been given a heat ray weapon.
 
     // We'll keep checking to see if we've killed all the aliens yet.
     while (aliens_alive > 0) {
@@ -88,7 +90,7 @@ pub fn main() void {
         for (&aliens) |*alien| {
 
             // *** Zap the alien with the heat ray here! ***
-            ???.zap(???);
+            heat_ray.zap(alien);
 
             // If the alien's health is still above 0, it's still alive.
             if (alien.health > 0) aliens_alive += 1;

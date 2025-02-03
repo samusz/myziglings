@@ -54,11 +54,11 @@ pub fn main() void {
         \\  <span style="color: #{x:0>6}">Red</span>
         \\  <span style="color: #{x:0>6}">Green</span>
         \\  <span style="color: #{x:0>6}">Blue</span>
-        \\</p>olo
+        \\</p>
         \\
     , .{
         @intFromEnum(Color.red),
         @intFromEnum(Color.green),
-        @intFromEnum(Color.blue), // Oops! We're missing something!
+        @intFromEnum(Color.blue),
     });
 }
